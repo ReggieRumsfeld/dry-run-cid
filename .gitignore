@@ -65,6 +65,9 @@ typings/
 # test files
 testFiles/
 
+# local node files
+local_IPFS/
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
