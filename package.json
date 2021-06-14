@@ -1,7 +1,7 @@
 {
     "name": "dry-run-cid",
     "version": "1.0.0",
-    "main": "/src/index.js",
+    "main": "src/index.js",
     "repository": "https://github.com/ReggieRumsfeld/dry-run-cid.git",
     "author": "ReggieRumsfeld",
     "license": "MIT",
