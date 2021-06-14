@@ -1,5 +1,5 @@
 # dry-run-cid
-## Calculating CIDs without importing data into IPFS
+## Determining CIDs without importing data into IPFS
 
 ### IPFS Privacy // NFT Front-Running 
 
@@ -26,8 +26,8 @@ This repo intends to establish the relevant CIDs to be included in a transaction
 
 ```bash
 # Dependencies to create CID instances 
-const CID = require('cids');
-const multiHashing = require('multihashing-async');
+const CID = require('cids')
+const multiHashing = require('multihashing-async')
 
 # Options in establishing the CID 
 const cidOptions = {
@@ -38,7 +38,7 @@ const cidOptions = {
 
 # Content to be passed as Buffer
 async function createCid(content, hashAlg, cidVersion, cidCode) {
-    hashAlg = hashAlg || cidOptions.hashAlg;
+    hashAlg = hashAlg || cidOptions.hashAlg
     cidVersion = cidVersion || cidOptions.cidVersion
     cidCode = cidCode || cidOptions.code
     let fileHash = await multiHashing(content, hashAlg)
@@ -56,7 +56,7 @@ Programmaticly spawning a local, offline node is very useful for testing the gen
 
 ```bash
 # js-ipfs' Core API dependency
-const IPFS_LOCAL = require('ipfs-core');
+const IPFS_LOCAL = require('ipfs-core')
 
 # repo: the location of the IPFS node's repository within your project
 function localIpfsNode(repo) {
